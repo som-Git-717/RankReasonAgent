@@ -83,6 +83,22 @@ class SEOAgent:
 
 **Note:** The new sheet must follow standard Screaming Frog export conventions for the agent to function correctly.
 
+### Credentials
+This repository does NOT include any real credentials.
+Users must provide their own credentials and API keys.
+
+#### Required Files (User-Provided)
+1. credentials.json
+  - A **Google Cloud Service Account JSON key**
+  - **Must have permissions for:**
+    - Google Analytics Admin API
+    - Google Analytics Data API
+    - Google Analytics API
+    - Google Sheets API
+  - **Update this file in the project root**
+2. .env **file**
+  - Update the placeholder with your api key 
+
 ## Data Source Integrations
 *   **Google Analytics 4**: Accessed via the `google-analytics-data` Python client. Requires a service account JSON key (`credentials.json`).
 *   **Screaming Frog**: Data is ingested from Google Sheets using the **Google Sheets API** (authenticated).
