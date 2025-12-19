@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+google-analytics-data
+pandas
+openai
+python-dotenv
+requests
+openpyxl
+tabulate
+google-api-python-client
